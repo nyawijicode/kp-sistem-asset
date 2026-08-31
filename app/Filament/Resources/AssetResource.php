@@ -59,7 +59,7 @@ class AssetResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('nama_aset')->searchable()->sortable(),
+                Tables\Columns\TextColumn::make('nama_aset')->searchable()->label('Nama Aset')->sortable(),
                 Tables\Columns\TextColumn::make('serial_number')->label('Serial Number')->searchable(),
                 Tables\Columns\TextColumn::make('kategori')->searchable(),
                 Tables\Columns\TextColumn::make('qty')->sortable(),
